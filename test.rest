@@ -1,0 +1,26 @@
+GET http://localhost:3000/users/
+
+###
+GET http://localhost:3000/users/65b19e8c2d067770f4bfd3c2
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "username":"bcrypt123",
+    "password":"pass123"
+}
+
+### Delete
+DELETE http://localhost:3000/users/65b19e8c2d067770f4bfd3c2
+
+### Login
+GET http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "bcrypt123",
+    "password": "pass123"
+}
